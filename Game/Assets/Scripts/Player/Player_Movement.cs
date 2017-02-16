@@ -2,8 +2,8 @@
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
 
-public class Player_Movement : AbstractPlayer_Movement {
-
+public class Player_Movement : AbstractPlayer_Movement
+{
 	protected override void Start ()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();

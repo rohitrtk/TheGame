@@ -4,8 +4,8 @@ using UnityEngine.AI;
 /// <summary>
 /// Abstract class for player movement
 /// </summary>
-public abstract class AbstractPlayer_Movement : MonoBehaviour {
-
+public abstract class AbstractPlayer_Movement : MonoBehaviour
+{
     // Navmesh Agent used for pathing
     protected NavMeshAgent _navMeshAgent;
     
