@@ -1,10 +1,10 @@
-﻿using UnityEngine;
-using UnityEngine.AI;
+﻿using UnityEngine.AI;
+using UnityEngine.Networking;
 
 /// <summary>
 /// Abstract class for player movement
 /// </summary>
-public abstract class AbstractPlayer_Movement : MonoBehaviour
+public abstract class AbstractPlayer_Movement : NetworkBehaviour
 {
     // Navmesh Agent used for pathing
     protected NavMeshAgent _navMeshAgent;

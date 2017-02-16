@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\Player\AbstractPlayer_Movement.cs" />
     <Compile Include="Assets\Scripts\Player\AbstractPlayer_Rotation.cs" />
     <Compile Include="Assets\Scripts\Player\Player_Movement.cs" />
+    <Compile Include="Assets\Scripts\Player\Player_MovementNetworkSync.cs" />
     <Compile Include="Assets\Scripts\Player\Player_NetworkInit.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

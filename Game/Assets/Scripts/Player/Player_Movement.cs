@@ -6,11 +6,15 @@ public class Player_Movement : AbstractPlayer_Movement
 {
 	protected override void Start ()
     {
+        if (!isLocalPlayer) return;
+
         _navMeshAgent = GetComponent<NavMeshAgent>();
     }
 	
 	protected override void Update ()
     {
+        if (!isLocalPlayer) return;
+
         // Right mouse button down
         if (Input.GetMouseButtonDown(1) &&
             !EventSystem.current.IsPointerOverGameObject()) Interact();
@@ -18,6 +22,8 @@ public class Player_Movement : AbstractPlayer_Movement
 
     protected override void Interact()
     {
+        if (!isLocalPlayer) return;
+
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit rayInfo;
         if (Physics.Raycast(ray, out rayInfo, Mathf.Infinity))
