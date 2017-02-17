@@ -2,347 +2,87 @@ Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Renderer: NVIDIA GeForce GTX 950M (ID=0x139a)
     Vendor:   NVIDIA
-    VRAM:     3072 MB
-    Driver:   21.21.13.7866
+    VRAM:     2019 MB
+    Driver:   20.19.15.4474
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.017 seconds
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.029 seconds
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
+UnloadTime: 2.083162 ms
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Renderer: NVIDIA GeForce GTX 950M (ID=0x139a)
     Vendor:   NVIDIA
-    VRAM:     3072 MB
-    Driver:   21.21.13.7866
+    VRAM:     2019 MB
+    Driver:   20.19.15.4474
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.016 seconds
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.026 seconds
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-UnloadTime: 0.859392 ms
-<RI> Initialized touch support.
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 38a4 -> priority: 1 
-  Thread -> id: 3b34 -> priority: 1 
-UnloadTime: 0.779008 ms
+  Thread -> id: 123c -> priority: 1 
+  Thread -> id: 2778 -> priority: 1 
+<RI> Initialized touch support.
+UnloadTime: 3.456399 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 28c0 -> priority: 1 
+  Thread -> id: 28c4 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.229632 ms
+UnloadTime: 0.216889 ms
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 436.
-Total: 0.342272 ms (FindLiveObjects: 0.018176 ms CreateObjectMapping: 0.010752 ms MarkObjects: 0.154880 ms  DeleteObjects: 0.158208 ms)
+Total: 0.659753 ms (FindLiveObjects: 0.031209 ms CreateObjectMapping: 0.024098 ms MarkObjects: 0.274963 ms  DeleteObjects: 0.329086 ms)
 
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 214c -> priority: 1 
-  Thread -> id: d2c -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.249600 ms
+UnloadTime: 0.227950 ms
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 404.
-Total: 0.298496 ms (FindLiveObjects: 0.015872 ms CreateObjectMapping: 0.009728 ms MarkObjects: 0.123904 ms  DeleteObjects: 0.148480 ms)
+Total: 0.472494 ms (FindLiveObjects: 0.024098 ms CreateObjectMapping: 0.014222 ms MarkObjects: 0.233086 ms  DeleteObjects: 0.200691 ms)
 
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+Auto Attack!
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+Auto Attack!
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+Auto Attack!
  
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.468097 ms
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 314.
-Total: 0.741888 ms (FindLiveObjects: 0.007936 ms CreateObjectMapping: 0.009216 ms MarkObjects: 0.094208 ms  DeleteObjects: 0.630528 ms)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnityException: GameObject has undefined tag!
-  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
-  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
-  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 

@@ -42,7 +42,7 @@ public sealed class Player_Movement : AbstractPlayer_Movement
                 print("Auto Attack!");
                 return;
             }
-
+            
             _navMeshAgent.destination = rayInfo.point;
         }
     }

@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 /// </summary>
 public sealed class Player_NetworkInit : NetworkBehaviour
 {
-    [SerializeField ] public CameraControl CameraControlPrefab;         // Reference to the CameraControl prefab
+    [SerializeField] public CameraControl CameraControlPrefab;          // Reference to the CameraControl prefab
 
     private CameraControl _playerCameraControl;                         // Camera control object to be instantiated for player
 
