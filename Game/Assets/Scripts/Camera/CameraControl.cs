@@ -4,7 +4,7 @@ using UnityEngine;
 /// <summary>
 /// Handles the following of a player for a gameobject with a camera
 /// </summary>
-public class CameraControl : NetworkBehaviour
+public sealed class CameraControl : NetworkBehaviour
 {
     [HideInInspector] public Transform TargetTransform;             // The target that this object will follow
 

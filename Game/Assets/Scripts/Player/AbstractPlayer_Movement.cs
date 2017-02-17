@@ -8,7 +8,10 @@ public abstract class AbstractPlayer_Movement : NetworkBehaviour
 {
     // Navmesh Agent used for pathing
     protected NavMeshAgent _navMeshAgent;
-    
+
+    // Attack class
+    protected AbstractPlayer_Attack _attack;
+
     /// <summary>
     /// Called upon object creation
     /// </summary>

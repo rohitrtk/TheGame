@@ -19,14 +19,13 @@ Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Manag
 Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.018 seconds
+- Completed reload, in  0.017 seconds
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.855552 ms
 Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -54,35 +53,296 @@ Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Manag
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1f4 -> priority: 1 
-  Thread -> id: 3e90 -> priority: 1 
+UnloadTime: 0.859392 ms
 <RI> Initialized touch support.
-UnloadTime: 0.759296 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 35e8 -> priority: 1 
-  Thread -> id: 1410 -> priority: 1 
+  Thread -> id: 38a4 -> priority: 1 
+  Thread -> id: 3b34 -> priority: 1 
+UnloadTime: 0.779008 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.147456 ms
+UnloadTime: 0.229632 ms
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 411.
-Total: 0.912896 ms (FindLiveObjects: 0.018176 ms CreateObjectMapping: 0.009728 ms MarkObjects: 0.726272 ms  DeleteObjects: 0.158208 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 436.
+Total: 0.342272 ms (FindLiveObjects: 0.018176 ms CreateObjectMapping: 0.010752 ms MarkObjects: 0.154880 ms  DeleteObjects: 0.158208 ms)
 
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 214c -> priority: 1 
+  Thread -> id: d2c -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.230912 ms
+UnloadTime: 0.249600 ms
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 379.
-Total: 0.307712 ms (FindLiveObjects: 0.015872 ms CreateObjectMapping: 0.009728 ms MarkObjects: 0.132864 ms  DeleteObjects: 0.148736 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 404.
+Total: 0.298496 ms (FindLiveObjects: 0.015872 ms CreateObjectMapping: 0.009728 ms MarkObjects: 0.123904 ms  DeleteObjects: 0.148480 ms)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.269697 ms
+UnloadTime: 2.468097 ms
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 311.
-Total: 0.762880 ms (FindLiveObjects: 0.008960 ms CreateObjectMapping: 0.009472 ms MarkObjects: 0.098304 ms  DeleteObjects: 0.645376 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 314.
+Total: 0.741888 ms (FindLiveObjects: 0.007936 ms CreateObjectMapping: 0.009216 ms MarkObjects: 0.094208 ms  DeleteObjects: 0.630528 ms)
 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.346305 ms
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 311.
-Total: 0.792576 ms (FindLiveObjects: 0.008960 ms CreateObjectMapping: 0.009984 ms MarkObjects: 0.105728 ms  DeleteObjects: 0.667904 ms)
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at Player_Movement.Interact () [0x00000] in <filename unknown>:0 
+  at Player_Movement.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 

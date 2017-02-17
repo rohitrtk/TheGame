@@ -4,7 +4,7 @@ using UnityEngine.Networking;
 /// <summary>
 /// Syncs the players position across a network
 /// </summary>
-public class Player_MovementNetworkSync : NetworkBehaviour
+public sealed class Player_MovementNetworkSync : NetworkBehaviour
 {
     [SerializeField] private Transform myTransform;     // This gameobjects transform
     [SerializeField] private float lerpRate = 18f;      // Rate to lerp at

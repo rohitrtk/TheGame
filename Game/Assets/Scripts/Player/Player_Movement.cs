@@ -2,13 +2,14 @@
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
 
-public class Player_Movement : AbstractPlayer_Movement
+public sealed class Player_Movement : AbstractPlayer_Movement
 {
 	protected override void Start ()
     {
         if (!isLocalPlayer) return;
 
         _navMeshAgent = GetComponent<NavMeshAgent>();
+        _attack = new Player_Attack();
     }
 	
 	protected override void Update ()
@@ -33,6 +34,12 @@ public class Player_Movement : AbstractPlayer_Movement
             if (rayObject.tag == "Interactable")
             {
                 print("Interact");
+                return;
+            }
+            else if(rayObject.tag == "Destructable" && Vector3.Distance(gameObject.transform.position, rayObject.transform.position) < 10f)
+            {
+                _attack.AutoAttack(rayObject);
+                print("Auto Attack!");
                 return;
             }
 
