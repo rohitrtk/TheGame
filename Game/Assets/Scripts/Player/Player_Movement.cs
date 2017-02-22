@@ -2,6 +2,9 @@
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
 
+/// <summary>
+/// Basic player movement class, extends from AbstractPlayer_Movement
+/// </summary>
 public sealed class Player_Movement : AbstractPlayer_Movement
 {
 	protected override void Start ()
