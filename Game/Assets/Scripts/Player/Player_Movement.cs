@@ -14,7 +14,7 @@ public sealed class Player_Movement : AbstractPlayer_Movement
 	protected override void Start ()
     {
         if (!isLocalPlayer) return;
-        print("loaded");
+        
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _playerAttack = GetComponent<Player_Attack>();
     }

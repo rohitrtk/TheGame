@@ -9,10 +9,10 @@ Direct3D:
 Begin MonoManager ReloadAssembly
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
@@ -21,84 +21,34 @@ Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Manag
 Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.106 seconds
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
-<RI> Initializing input.
-<RI> Input initialized.
-Initialize engine version: 5.5.0f3 (38b4efef76f0)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
-    Vendor:   NVIDIA
-    VRAM:     3072 MB
-    Driver:   21.21.13.7866
-Begin MonoManager ReloadAssembly
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.017 seconds
+- Completed reload, in  0.021 seconds
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.805375 ms
-<RI> Initialized touch support.
+UnloadTime: 0.805631 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 11ec -> priority: 1 
-  Thread -> id: 143c -> priority: 1 
-UnloadTime: 0.754943 ms
+  Thread -> id: c24 -> priority: 1 
+  Thread -> id: 1dc8 -> priority: 1 
+MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.203775 ms
-loaded
+UnloadTime: 0.217343 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 629.
+Total: 0.372479 ms (FindLiveObjects: 0.025087 ms CreateObjectMapping: 0.015615 ms MarkObjects: 0.179455 ms  DeleteObjects: 0.152063 ms)
+
+MatchMakingClient DropConnection :https://mm.unet.unity3d.com/json/reply/DropConnectionRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.566719 ms
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 464.
-Total: 0.338431 ms (FindLiveObjects: 0.018687 ms CreateObjectMapping: 0.010751 ms MarkObjects: 0.150271 ms  DeleteObjects: 0.158463 ms)
-
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2c4 -> priority: 1 
-  Thread -> id: 33f0 -> priority: 1 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.250623 ms
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 426.
-Total: 0.311807 ms (FindLiveObjects: 0.016127 ms CreateObjectMapping: 0.011775 ms MarkObjects: 0.134143 ms  DeleteObjects: 0.149759 ms)
-
-loaded
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Auto Attack!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Auto Attack!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Auto Attack!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Auto Attack!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 359.
+Total: 0.939263 ms (FindLiveObjects: 0.009727 ms CreateObjectMapping: 0.009983 ms MarkObjects: 0.126975 ms  DeleteObjects: 0.792575 ms)
 
