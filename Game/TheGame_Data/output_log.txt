@@ -2,77 +2,93 @@ Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 950M (ID=0x139a)
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
     Vendor:   NVIDIA
-    VRAM:     2019 MB
-    Driver:   20.19.15.4474
+    VRAM:     3072 MB
+    Driver:   21.21.13.7866
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.029 seconds
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.106 seconds
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-<RI> Initialized touch support.
 Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
-UnloadTime: 2.083162 ms
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 950M (ID=0x139a)
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
     Vendor:   NVIDIA
-    VRAM:     2019 MB
-    Driver:   20.19.15.4474
+    VRAM:     3072 MB
+    Driver:   21.21.13.7866
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.026 seconds
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.017 seconds
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 123c -> priority: 1 
-  Thread -> id: 2778 -> priority: 1 
 <RI> Initialized touch support.
-UnloadTime: 3.456399 ms
+UnloadTime: 0.805375 ms
+<RI> Initialized touch support.
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 28c0 -> priority: 1 
-  Thread -> id: 28c4 -> priority: 1 
+  Thread -> id: 11ec -> priority: 1 
+  Thread -> id: 143c -> priority: 1 
+UnloadTime: 0.754943 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.216889 ms
+UnloadTime: 0.203775 ms
+loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 436.
-Total: 0.659753 ms (FindLiveObjects: 0.031209 ms CreateObjectMapping: 0.024098 ms MarkObjects: 0.274963 ms  DeleteObjects: 0.329086 ms)
 
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 464.
+Total: 0.338431 ms (FindLiveObjects: 0.018687 ms CreateObjectMapping: 0.010751 ms MarkObjects: 0.150271 ms  DeleteObjects: 0.158463 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2c4 -> priority: 1 
+  Thread -> id: 33f0 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.227950 ms
+UnloadTime: 0.250623 ms
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 404.
-Total: 0.472494 ms (FindLiveObjects: 0.024098 ms CreateObjectMapping: 0.014222 ms MarkObjects: 0.233086 ms  DeleteObjects: 0.200691 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 426.
+Total: 0.311807 ms (FindLiveObjects: 0.016127 ms CreateObjectMapping: 0.011775 ms MarkObjects: 0.134143 ms  DeleteObjects: 0.149759 ms)
+
+loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Auto Attack!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Auto Attack!
  
