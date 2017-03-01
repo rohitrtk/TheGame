@@ -9,16 +9,17 @@ public sealed class CameraControl : NetworkBehaviour
     [HideInInspector] public Transform TargetTransform;             // The target that this object will follow
 
     private Camera _camera;                                         // The camera attached to this gameobject
+    private const float _CAMERAROTATION = 60f;                      // The rotation of the camera
 
     /// <summary>
     /// Called on object creations
     /// </summary>
 	private void Start ()
     {
-        _camera = GetComponent<Camera>();                           // Gets the camera object attached to this gameobject
+        _camera = GetComponent<Camera>();                                       // Gets the camera object attached to this gameobject
 
-        Quaternion cameraRotation = Quaternion.Euler(50f, 0f, 0f);  // Quaternion with a 50 degree rotation on the x axis?
-        _camera.transform.rotation = cameraRotation;                // Set the cameras rotation to the quaternion above
+        Quaternion cameraRotation = Quaternion.Euler(_CAMERAROTATION, 0f, 0f);  // Quaternion with a 50 degree rotation on the x axis?
+        _camera.transform.rotation = cameraRotation;                            // Set the cameras rotation to the quaternion above
 	}
 	
     /// <summary>
