@@ -4,27 +4,53 @@ using UnityEngine.Networking;
 
 public class MyNetworkManager : NetworkManager
 {
-     public void StartupHost()
+    public new void StartHost()
     {
         SetPort();
-        NetworkManager.singleton.StartHost();
+        singleton.StartHost();
     }
 	
     public void JoinGame()
     {
         SetIPAdress();
         SetPort();
-        NetworkManager.singleton.StartClient();
+        singleton.StartClient();
     }
 
     private void SetPort()
     {
-        NetworkManager.singleton.networkPort = 7777;
+        singleton.networkPort = 7777;
     }
 
     private void SetIPAdress()
     {
         var ipAdress = GameObject.Find("InputIP").transform.FindChild("Text").GetComponent<Text>().text;
-        NetworkManager.singleton.networkAddress = ipAdress;
+        singleton.networkAddress = ipAdress;
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        if(level == 0)
+        {
+            LoadMenuButtons();
+            return;
+        }
+
+        LoadLevelButtons();
+    }
+
+    private void LoadMenuButtons()
+    {
+        //GameObject.Find("button_StartHost").GetComponent<Button>().onClick.RemoveAllListeners();
+        GameObject.Find("button_StartHost").GetComponent<Button>().onClick.AddListener(StartHost);
+
+        //GameObject.Find("button_JoinMatch").GetComponent<Button>().onClick.RemoveAllListeners();
+        GameObject.Find("button_JoinMatch").GetComponent<Button>().onClick.AddListener(StartHost);
+    }
+
+    private void LoadLevelButtons()
+    {
+        GameObject.Find("button_Disconnect").GetComponent<Button>().onClick.RemoveAllListeners();
+        GameObject.Find("button_Disconnect").GetComponent<Button>().onClick.AddListener(singleton.StopHost);
     }
 }
