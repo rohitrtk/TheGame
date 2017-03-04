@@ -8,13 +8,20 @@ public class MyNetworkManager : NetworkManager
     {
         SetPort();
         singleton.StartHost();
+
+        print("Hosting on: " + singleton.networkAddress);
     }
 	
     public void JoinGame()
     {
         SetIPAdress();
         SetPort();
+
+        if (!NetworkServer.active) return;
+
         singleton.StartClient();
+
+        print("Connected to: " + singleton.networkAddress);
     }
 
     private void SetPort()
@@ -45,7 +52,7 @@ public class MyNetworkManager : NetworkManager
         GameObject.Find("button_StartHost").GetComponent<Button>().onClick.AddListener(StartHost);
 
         //GameObject.Find("button_JoinMatch").GetComponent<Button>().onClick.RemoveAllListeners();
-        GameObject.Find("button_JoinMatch").GetComponent<Button>().onClick.AddListener(StartHost);
+        GameObject.Find("button_JoinMatch").GetComponent<Button>().onClick.AddListener(JoinGame);
     }
 
     private void LoadLevelButtons()
