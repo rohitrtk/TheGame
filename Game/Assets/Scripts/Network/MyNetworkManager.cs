@@ -8,7 +8,7 @@ using UnityEngine.Networking;
 /// </summary>
 public class MyNetworkManager : NetworkManager
 {
-    public new void StartHost()
+    public void HostGame()
     {
         SetPort();
         singleton.StartHost();
@@ -20,8 +20,6 @@ public class MyNetworkManager : NetworkManager
     {
         SetIPAdress();
         SetPort();
-
-        
 
         singleton.StartClient();
 
@@ -37,7 +35,6 @@ public class MyNetworkManager : NetworkManager
     {
         var ipAdress = GameObject.Find("InputIP").transform.FindChild("Text").GetComponent<Text>().text;
         singleton.networkAddress = ipAdress;
-        print(ipAdress);
     }
 
     private void OnLevelWasLoaded(int level)
@@ -56,7 +53,7 @@ public class MyNetworkManager : NetworkManager
         yield return new WaitForSeconds(0.5f);
 
         GameObject.Find("button_StartHost").GetComponent<Button>().onClick.RemoveAllListeners();
-        GameObject.Find("button_StartHost").GetComponent<Button>().onClick.AddListener(StartHost);
+        GameObject.Find("button_StartHost").GetComponent<Button>().onClick.AddListener(HostGame);
 
         GameObject.Find("button_JoinMatch").GetComponent<Button>().onClick.RemoveAllListeners();
         GameObject.Find("button_JoinMatch").GetComponent<Button>().onClick.AddListener(JoinGame);
