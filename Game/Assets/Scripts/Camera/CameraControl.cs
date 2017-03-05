@@ -6,10 +6,10 @@ using UnityEngine;
 /// </summary>
 public sealed class CameraControl : NetworkBehaviour
 {
-    [HideInInspector] public Transform TargetTransform;             // The target that this object will follow
+    [HideInInspector] public Transform TargetTransform;                         // The target that this object will follow
 
-    private Camera _camera;                                         // The camera attached to this gameobject
-    private const float _CAMERAROTATION = 60f;                      // The rotation of the camera
+    private Camera _camera;                                                     // The camera attached to this gameobject
+    private Vector3 _CAMERAROTATION = new Vector3(60f, -45f, 0f);               // The rotation of the camera
 
     /// <summary>
     /// Called on object creations
@@ -18,7 +18,7 @@ public sealed class CameraControl : NetworkBehaviour
     {
         _camera = GetComponent<Camera>();                                       // Gets the camera object attached to this gameobject
 
-        Quaternion cameraRotation = Quaternion.Euler(_CAMERAROTATION, 0f, 0f);  // Quaternion with a 50 degree rotation on the x axis?
+        Quaternion cameraRotation = Quaternion.Euler(_CAMERAROTATION);          // Quaternion with a 50 degree rotation on the x axis?
         _camera.transform.rotation = cameraRotation;                            // Set the cameras rotation to the quaternion above
 	}
 	
@@ -29,11 +29,11 @@ public sealed class CameraControl : NetworkBehaviour
     {
         if (!TargetTransform) return;                               // If the target transform hasn't been given yet, leave method
 
-        Vector3 myTransform;                                        // Vector position associated with the camera attached to this object
-        myTransform = transform.position;                           // Set myTransform to this gameobjects transform (So it can be edited)
-        myTransform.x = TargetTransform.position.x;             // Set myTransform.x to this gameobjects transform.x
-        myTransform.y = TargetTransform.position.y + 7.5f;           // Set myTransform.y to this gameobjects transform.y but 5 units up
-        myTransform.z = TargetTransform.position.z - 5f;            // Set myTransform.z to this gameobjects transform.z but 5 units back
+        Vector3 myTransform;                                          // Vector position associated with the camera attached to this object
+        myTransform = transform.position;                             // Set myTransform to this gameobjects transform (So it can be edited)
+        myTransform.x = TargetTransform.position.x + 6f;                   // Set myTransform.x to this gameobjects transform.x
+        myTransform.y = TargetTransform.position.y + 15f;             // Set myTransform.y to this gameobjects transform.y but 5 units up
+        myTransform.z = TargetTransform.position.z - 8f;            // Set myTransform.z to this gameobjects transform.z but 5 units back
 
         transform.position = myTransform;                           // Set this gameobjects transform to myTransform
 	}
