@@ -1,7 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 
+/// <summary>
+/// My own network manager, extends from Unitities network
+/// </summary>
 public class MyNetworkManager : NetworkManager
 {
     public new void StartHost()
@@ -17,7 +21,7 @@ public class MyNetworkManager : NetworkManager
         SetIPAdress();
         SetPort();
 
-        if (!NetworkServer.active) return;
+        
 
         singleton.StartClient();
 
@@ -33,21 +37,24 @@ public class MyNetworkManager : NetworkManager
     {
         var ipAdress = GameObject.Find("InputIP").transform.FindChild("Text").GetComponent<Text>().text;
         singleton.networkAddress = ipAdress;
+        print(ipAdress);
     }
 
     private void OnLevelWasLoaded(int level)
     {
         if(level == 0)
         {
-            LoadMenuButtons();
+            StartCoroutine(LoadMenuButtons());
             return;
         }
 
         LoadLevelButtons();
     }
 
-    private void LoadMenuButtons()
+    private IEnumerator LoadMenuButtons()
     {
+        yield return new WaitForSeconds(0.5f);
+
         //GameObject.Find("button_StartHost").GetComponent<Button>().onClick.RemoveAllListeners();
         GameObject.Find("button_StartHost").GetComponent<Button>().onClick.AddListener(StartHost);
 
