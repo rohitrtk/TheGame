@@ -55,10 +55,10 @@ public class MyNetworkManager : NetworkManager
     {
         yield return new WaitForSeconds(0.5f);
 
-        //GameObject.Find("button_StartHost").GetComponent<Button>().onClick.RemoveAllListeners();
+        GameObject.Find("button_StartHost").GetComponent<Button>().onClick.RemoveAllListeners();
         GameObject.Find("button_StartHost").GetComponent<Button>().onClick.AddListener(StartHost);
 
-        //GameObject.Find("button_JoinMatch").GetComponent<Button>().onClick.RemoveAllListeners();
+        GameObject.Find("button_JoinMatch").GetComponent<Button>().onClick.RemoveAllListeners();
         GameObject.Find("button_JoinMatch").GetComponent<Button>().onClick.AddListener(JoinGame);
     }
 

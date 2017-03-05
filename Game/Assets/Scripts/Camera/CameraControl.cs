@@ -31,8 +31,8 @@ public sealed class CameraControl : NetworkBehaviour
 
         Vector3 myTransform;                                        // Vector position associated with the camera attached to this object
         myTransform = transform.position;                           // Set myTransform to this gameobjects transform (So it can be edited)
-        myTransform.x = TargetTransform.position.x;                 // Set myTransform.x to this gameobjects transform.x
-        myTransform.y = TargetTransform.position.y + 5f;            // Set myTransform.y to this gameobjects transform.y but 5 units up
+        myTransform.x = TargetTransform.position.x;             // Set myTransform.x to this gameobjects transform.x
+        myTransform.y = TargetTransform.position.y + 7.5f;           // Set myTransform.y to this gameobjects transform.y but 5 units up
         myTransform.z = TargetTransform.position.z - 5f;            // Set myTransform.z to this gameobjects transform.z but 5 units back
 
         transform.position = myTransform;                           // Set this gameobjects transform to myTransform
