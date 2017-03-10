@@ -55,6 +55,7 @@ public sealed class Player_Movement : AbstractPlayer_Movement
                 print("Interact");
                 return;
             }
+            
             else if(rayObject.tag == "Destructable" && Vector3.Distance(gameObject.transform.position, rayObject.transform.position) < 10f)
             {
                 _playerAttack.Cast("AUTO", rayObject);

@@ -8,6 +8,9 @@ using UnityEngine.Networking;
 /// </summary>
 public class MyNetworkManager : NetworkManager
 {
+    /// <summary>
+    /// This method will start a host client
+    /// </summary>
     public void HostGame()
     {
         SetPort();
@@ -16,6 +19,9 @@ public class MyNetworkManager : NetworkManager
         print("Hosting on: " + singleton.networkAddress);
     }
 	
+    /// <summary>
+    /// This method will start a client that will communicate with a server
+    /// </summary>
     public void JoinGame()
     {
         SetIPAdress();
@@ -26,17 +32,28 @@ public class MyNetworkManager : NetworkManager
         print("Connected to: " + singleton.networkAddress);
     }
 
+    /// <summary>
+    /// Sets the port to connect to
+    /// </summary>
     private void SetPort()
     {
         singleton.networkPort = 7777;
     }
 
+    /// <summary>
+    /// Sets the ip address to connect to
+    /// </summary>
     private void SetIPAdress()
     {
         var ipAdress = GameObject.Find("InputIP").transform.FindChild("Text").GetComponent<Text>().text;
         singleton.networkAddress = ipAdress;
     }
 
+    /// <summary>
+    /// Unity method; called when a level has succesfully loaded
+    /// Used to set e
+    /// </summary>
+    /// <param name="level"></param>
     private void OnLevelWasLoaded(int level)
     {
         if(level == 0)
@@ -48,6 +65,10 @@ public class MyNetworkManager : NetworkManager
         LoadLevelButtons();
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator LoadMenuButtons()
     {
         yield return new WaitForSeconds(0.5f);
@@ -59,6 +80,9 @@ public class MyNetworkManager : NetworkManager
         GameObject.Find("button_JoinMatch").GetComponent<Button>().onClick.AddListener(JoinGame);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     private void LoadLevelButtons()
     {
         GameObject.Find("button_Disconnect").GetComponent<Button>().onClick.RemoveAllListeners();
