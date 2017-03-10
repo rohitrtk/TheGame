@@ -42,8 +42,16 @@ public sealed class Player_Movement : AbstractPlayer_Movement
 
         // If the navmesh has a path; set the navmesh acceleration to the players deceleration value else
         // set the namesh acceleration to the players acceleration value
-        if (_navMeshAgent.hasPath) _navMeshAgent.acceleration = 
+        if (_navMeshAgent.hasPath)
+        {
+            _isMoving = true;
+            _navMeshAgent.acceleration =
                 (_navMeshAgent.remainingDistance < _navMeshAgent.stoppingDistance) ? _playerDeceleration : _playerAcceleration;
+        }
+        else
+        {
+            _isMoving = false;
+        }
     }
 
     /// <summary>

@@ -24,6 +24,9 @@ public abstract class AbstractPlayer_Movement : NetworkBehaviour
     // Nav Mesh stopping distance
     protected const float _PLAYERSTOPPINGDISTANCE = 1f;
 
+    // Is the character moving
+    protected bool _isMoving;
+
     /// <summary>
     /// Called upon object creation
     /// </summary>
@@ -38,4 +41,18 @@ public abstract class AbstractPlayer_Movement : NetworkBehaviour
     /// Called to check for interactions with the game world
     /// </summary>
     protected abstract void Interact();
+
+    /// <summary>
+    /// Returns the boolean for if the player is moving
+    /// </summary>
+    /// <returns></returns>
+    public bool GetIsMoving()
+    {
+        return _isMoving;
+    }
+
+    public bool GetIsAttacking()
+    {
+        return _playerAttack.GetIsAttacking();
+    }
 }

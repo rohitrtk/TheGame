@@ -4,7 +4,9 @@ using UnityEngine.Networking;
 public abstract class AbstractPlayer_Attack : NetworkBehaviour
 {
     // Players auto attack range (relative to Unity units)
+    protected bool _isAttacking;                        // Is the player attacking at this moment
     protected float _autoAttackRange;
+    protected float _autoAttackCooldownTime;            // Mimimum amount of time between auto attacks
 
     /// <summary>
     /// Called to 'cast' an ability
@@ -43,5 +45,10 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
     /// <summary>
     /// Uses players ability 4
     /// </summary>
-    public abstract void Ability4(); 
+    public abstract void Ability4();
+
+    public virtual bool GetIsAttacking()
+    {
+        return _isAttacking;
+    }
 }

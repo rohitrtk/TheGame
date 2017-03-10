@@ -11,6 +11,25 @@ public class Player_Attack : AbstractPlayer_Attack
         if (!isLocalPlayer) return;
 
         _autoAttackRange = 10f;
+        _autoAttackCooldownTime = 0.5f;
+    }
+
+    /// <summary>
+    /// Called once per frame
+    /// </summary>
+    public void Update()
+    {
+        // If player is attacking...
+        if (_isAttacking)
+        {
+            // If the attack cooldown is still going down...
+            if(_autoAttackCooldownTime <= 0)
+            {
+                _autoAttackCooldownTime = 0.5f;
+                _isAttacking = false;
+            }
+            else _autoAttackCooldownTime -= Time.deltaTime;
+        }
     }
 
     /// <summary>
@@ -45,7 +64,9 @@ public class Player_Attack : AbstractPlayer_Attack
     /// <param name="target"></param>
     public override void AutoAttack(GameObject target)
     {
-        if (!isLocalPlayer) return;
+        if (!isLocalPlayer || _isAttacking) return;
+
+        _isAttacking = true;
 
         string targetTag = target.tag;
         
