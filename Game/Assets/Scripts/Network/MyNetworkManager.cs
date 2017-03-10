@@ -16,7 +16,7 @@ public class MyNetworkManager : NetworkManager
         SetPort();
         singleton.StartHost();
 
-        print("Hosting on: " + singleton.networkAddress);
+        //print("Hosting on: " + singleton.networkAddress);
     }
 	
     /// <summary>
@@ -29,7 +29,7 @@ public class MyNetworkManager : NetworkManager
 
         singleton.StartClient();
 
-        print("Connected to: " + singleton.networkAddress);
+        //print("Connected to: " + singleton.networkAddress);
     }
 
     /// <summary>
@@ -66,11 +66,12 @@ public class MyNetworkManager : NetworkManager
     }
 
     /// <summary>
-    /// 
+    /// Loads the listeners for the buttons on the menu screen
     /// </summary>
     /// <returns></returns>
     private IEnumerator LoadMenuButtons()
     {
+        // Prevents a conflict with network managers on the menu screen
         yield return new WaitForSeconds(0.5f);
 
         GameObject.Find("button_StartHost").GetComponent<Button>().onClick.RemoveAllListeners();
@@ -81,7 +82,7 @@ public class MyNetworkManager : NetworkManager
     }
 
     /// <summary>
-    /// 
+    /// Loads the listeners for the buttons in game
     /// </summary>
     private void LoadLevelButtons()
     {

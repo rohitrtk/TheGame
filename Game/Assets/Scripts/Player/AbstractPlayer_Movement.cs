@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-using UnityEngine.AI;
+﻿using UnityEngine.AI;
 using UnityEngine.Networking;
 
 /// <summary>
@@ -12,6 +11,18 @@ public abstract class AbstractPlayer_Movement : NetworkBehaviour
 
     // Attack Component
     protected Player_Attack _playerAttack;
+
+    // Nav Mesh Speed
+    protected float _playerSpeed;
+
+    // Nav Mesh acceleration
+    protected float _playerAcceleration;
+
+    // Nav Mesh deceleration
+    protected float _playerDeceleration;
+
+    // Nav Mesh stopping distance
+    protected const float _PLAYERSTOPPINGDISTANCE = 1f;
 
     /// <summary>
     /// Called upon object creation

@@ -90,19 +90,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\C&amp;C_Pack\Goblin_rouge\Script\Goblin_ro_ctrl.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraControl.cs" />
     <Compile Include="Assets\Scripts\Network\MyNetworkManager.cs" />
     <Compile Include="Assets\Scripts\Object\Destruct.cs" />
     <Compile Include="Assets\Scripts\Player\AbstractPlayer_Attack.cs" />
     <Compile Include="Assets\Scripts\Player\AbstractPlayer_Movement.cs" />
+    <Compile Include="Assets\Scripts\Player\Goblin_ro_ctrl.cs" />
     <Compile Include="Assets\Scripts\Player\Player_Attack.cs" />
     <Compile Include="Assets\Scripts\Player\Player_Movement.cs" />
     <Compile Include="Assets\Scripts\Player\Player_MovementNetworkSync.cs" />
     <Compile Include="Assets\Scripts\Player\Player_NetworkInit.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\C&amp;C_Pack\Goblin_rouge\readme.txt" />
+    <None Include="Assets\Prefabs\Goblin_rouge\readme.txt" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
