@@ -68,13 +68,7 @@ public class Player_Attack : AbstractPlayer_Attack
 
         _isAttacking = true;
 
-        string targetTag = target.tag;
-        
-        if(targetTag == "Destructable")
-        {
-            Destruct d = target.GetComponent<Destruct>();
-            d.CanDestruct();
-        }
+        DeployMeleeRay(target);
     }
 
     /// <summary>

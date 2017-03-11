@@ -74,9 +74,11 @@ public sealed class Player_Movement : AbstractPlayer_Movement
             {
                 print("Interact");
             }
-            else if(rayObject.tag == "Destructable" && Vector3.Distance(gameObject.transform.position, rayObject.transform.position) < 10f)
+            else if(rayObject.tag == "Destructable")
             {
-                _playerAttack.Cast("AUTO", rayObject);
+                if (Vector3.Distance(gameObject.transform.position, rayObject.transform.position) < 10f) _playerAttack.Cast("AUTO", rayObject);
+                else _navMeshAgent.destination = rayObject.transform.position - (Vector3.back * 10f);
+
                 print("Auto Attack!");
             }
             else _navMeshAgent.destination = rayInfo.point;

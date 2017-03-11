@@ -46,13 +46,21 @@ public abstract class AbstractPlayer_Movement : NetworkBehaviour
     /// Returns the boolean for if the player is moving
     /// </summary>
     /// <returns></returns>
-    public bool GetIsMoving()
+    public virtual bool GetIsMoving()
     {
+        //if (!isLocalPlayer) return false;
+
         return _isMoving;
     }
 
-    public bool GetIsAttacking()
+    /// <summary>
+    /// Returns the boolean for if the player is attacking
+    /// </summary>
+    /// <returns></returns>
+    public virtual bool GetIsAttacking()
     {
+        //if (!isLocalPlayer) return false;
+
         return _playerAttack.GetIsAttacking();
     }
 }

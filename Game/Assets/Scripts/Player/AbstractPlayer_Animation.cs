@@ -1,11 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Networking;
 
 /// <summary>
 /// Abstract for player animations
 /// </summary>
-public abstract class AbstractPlayer_Animation : MonoBehaviour
+public abstract class AbstractPlayer_Animation : NetworkBehaviour
 {
     protected AbstractPlayer_Movement _parentMoveScript;    // Reference to the parents movement script
     protected Animator _playerAnimator;                     // Animator for the player

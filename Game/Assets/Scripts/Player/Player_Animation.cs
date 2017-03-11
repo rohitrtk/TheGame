@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.AI;
+﻿using UnityEngine;
 
 /// <summary>
 /// This class handles the players animations; extends from abstract animation
@@ -14,7 +10,9 @@ public class Player_Animation : AbstractPlayer_Animation
     /// </summary>
     protected override void Start()
     {
-        _parentMoveScript = GetComponentInParent<AbstractPlayer_Movement>();            // Gets reference to the parent move script
+        if (!isLocalPlayer) return;
+
+        _parentMoveScript = GetComponent<AbstractPlayer_Movement>();                    // Gets reference to the parent move script
 
         _playerAnimator = GetComponent<Animator>();                                     // Gets the animator component
         _playerAnimator.SetInteger("battle", 1);                                        // Sets the state of the player to "battle"
@@ -26,6 +24,8 @@ public class Player_Animation : AbstractPlayer_Animation
     /// </summary>
     protected override void Update()
     {
+        if (!isLocalPlayer) return;
+
         if (_parentMoveScript.GetIsMoving()) _playerAnimator.SetInteger("moving", 2);   // If moving
         else if (_parentMoveScript.GetIsAttacking()) _playerAnimator.SetInteger("moving", 3);
         else _playerAnimator.SetInteger("moving", 0);                                   // If not moving

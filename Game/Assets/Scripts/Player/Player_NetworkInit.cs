@@ -22,6 +22,8 @@ public sealed class Player_NetworkInit : NetworkBehaviour
 
         _playerCameraControl = Instantiate(CameraControlPrefab);        // Instantiate a new camera control prefab
         _playerCameraControl.TargetTransform = gameObject.transform;    // Set the initial target transform to this gameobjects transform
+
+        GetComponent<NetworkAnimator>().SetParameterAutoSend(0, true);
     }
     
     /// <summary>
@@ -32,5 +34,10 @@ public sealed class Player_NetworkInit : NetworkBehaviour
         if (!isLocalPlayer) return;
 
         _playerCameraControl.TargetTransform = gameObject.transform;    // Set the cameras target transform to this gameobjects transform
+    }
+
+    public override void PreStartClient()
+    {
+        GetComponent<NetworkAnimator>().SetParameterAutoSend(0, true);
     }
 }

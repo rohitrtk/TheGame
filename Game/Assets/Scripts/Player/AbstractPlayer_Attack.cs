@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.Networking;
 
 public abstract class AbstractPlayer_Attack : NetworkBehaviour
@@ -50,5 +51,25 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
     public virtual bool GetIsAttacking()
     {
         return _isAttacking;
+    }
+
+    public virtual IEnumerable DeployMeleeRay(GameObject target)
+    {
+        yield return new WaitForSeconds(0.5f * GetComponent<Animator>().speed);
+
+        RaycastHit rayInfo;
+        Ray direction = new Ray(transform.position, Vector3.forward);
+
+        if(Physics.Raycast(direction, out rayInfo, _autoAttackRange))
+        {
+            Debug.DrawRay(transform.position, Vector3.forward, Color.green, 10f);
+            string targetTag = target.tag;
+
+            if (targetTag == "Destructable")
+            {
+                Destruct d = target.GetComponent<Destruct>();
+                d.CanDestruct();
+            }
+        }
     }
 }
