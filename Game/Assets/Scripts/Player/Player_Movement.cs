@@ -69,6 +69,8 @@ public sealed class Player_Movement : AbstractPlayer_Movement
         {
             GameObject rayObject = rayInfo.collider.gameObject;
 
+            
+
             // Check what the player clicked on
             if (rayObject.tag == "Interactable")
             {
@@ -76,8 +78,13 @@ public sealed class Player_Movement : AbstractPlayer_Movement
             }
             else if(rayObject.tag == "Destructable")
             {
-                if (Vector3.Distance(gameObject.transform.position, rayObject.transform.position) < 10f) _playerAttack.Cast("AUTO", rayObject);
-                else _navMeshAgent.destination = rayObject.transform.position - (Vector3.back * 10f);
+                //RotateToTarget(rayObject.transform);
+
+                if (_playerAttack.Cast("AUTO", rayObject, _navMeshAgent) == -1) return;
+                else if (_playerAttack.Cast("AUTO", rayObject, _navMeshAgent) == 0) 
+
+                
+                _navMeshAgent.Stop();
 
                 print("Auto Attack!");
             }

@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Player_Attack : AbstractPlayer_Attack
 {
@@ -10,7 +11,7 @@ public class Player_Attack : AbstractPlayer_Attack
     {
         if (!isLocalPlayer) return;
 
-        _autoAttackRange = 10f;
+        _autoAttackRange = 3.5f;
         _autoAttackCooldownTime = 0.5f;
     }
 
@@ -36,7 +37,7 @@ public class Player_Attack : AbstractPlayer_Attack
     /// Called to 'cast' an ability  
     /// </summary>
     /// <param name="cast"></param>
-    public override void Cast(string cast)
+    public override void Cast(string cast, NavMeshAgent navMesh)
     {
         if (!isLocalPlayer) return;
 
@@ -51,11 +52,21 @@ public class Player_Attack : AbstractPlayer_Attack
     /// </summary>
     /// <param name="cast"></param>
     /// <param name="target"></param>
-    public override void Cast(string cast, GameObject target)
+    public override int Cast(string cast, GameObject target, NavMeshAgent navMesh)
     {
-        if (!isLocalPlayer) return;
+        if (!isLocalPlayer) return -1;
 
-        if (cast.Equals("AUTO")) AutoAttack(target);
+        print("Auto attacking 1");
+
+        var distance = navMesh.remainingDistance;
+
+        if (distance < _autoAttackRange) 
+        if (cast.Equals("AUTO"))
+        {
+            
+        }
+
+        return 0;
     }
 
     /// <summary>
@@ -66,9 +77,11 @@ public class Player_Attack : AbstractPlayer_Attack
     {
         if (!isLocalPlayer || _isAttacking) return;
 
+        print("Auto attacking 2");
+
         _isAttacking = true;
 
-        DeployMeleeRay(target);
+        StartCoroutine(DeployMeleeRay(target));
     }
 
     /// <summary>

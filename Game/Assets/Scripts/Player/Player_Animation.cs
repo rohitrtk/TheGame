@@ -26,8 +26,8 @@ public class Player_Animation : AbstractPlayer_Animation
     {
         if (!isLocalPlayer) return;
 
-        if (_parentMoveScript.GetIsMoving()) _playerAnimator.SetInteger("moving", 2);   // If moving
-        else if (_parentMoveScript.GetIsAttacking()) _playerAnimator.SetInteger("moving", 3);
+        if (_parentMoveScript.GetIsAttacking()) _playerAnimator.SetInteger("moving", Random.Range(3, 5));     // If attacking
+        else if (_parentMoveScript.GetIsMoving()) _playerAnimator.SetInteger("moving", 2);   // If moving
         else _playerAnimator.SetInteger("moving", 0);                                   // If not moving
     }
 }

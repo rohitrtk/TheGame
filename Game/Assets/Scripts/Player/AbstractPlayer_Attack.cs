@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.AI;
 
 public abstract class AbstractPlayer_Attack : NetworkBehaviour
 {
@@ -13,14 +14,14 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
     /// Called to 'cast' an ability
     /// </summary>
     /// <param name="cast"></param>
-    public abstract void Cast(string cast);
+    public abstract void Cast(string cast,  NavMeshAgent navMesh);
 
     /// <summary>
     /// Called to 'cast' an ability or auto attack that has a target
     /// </summary>
     /// <param name="cast"></param>
     /// <param name="target"></param>
-    public abstract void Cast(string cast, GameObject target);
+    public abstract int Cast(string cast, GameObject target, NavMeshAgent navMesh);
 
     /// <summary>
     /// Uses players normal attack ability
@@ -48,13 +49,17 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
     /// </summary>
     public abstract void Ability4();
 
+    /// <summary>
+    /// Returns true if the player is attacking
+    /// </summary>
+    /// <returns></returns>
     public virtual bool GetIsAttacking()
     {
         return _isAttacking;
     }
 
-    public virtual IEnumerable DeployMeleeRay(GameObject target)
-    {
+    public virtual IEnumerator DeployMeleeRay(GameObject target)
+    {// FIX ATTACK SCRIPT; IT'S NOT RUNNING?!?!?!?!
         yield return new WaitForSeconds(0.5f * GetComponent<Animator>().speed);
 
         RaycastHit rayInfo;
@@ -62,7 +67,7 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
 
         if(Physics.Raycast(direction, out rayInfo, _autoAttackRange))
         {
-            Debug.DrawRay(transform.position, Vector3.forward, Color.green, 10f);
+            Debug.DrawRay(transform.position + new Vector3(0, 2, 0), Vector3.forward, Color.green, 10f);
             string targetTag = target.tag;
 
             if (targetTag == "Destructable")
