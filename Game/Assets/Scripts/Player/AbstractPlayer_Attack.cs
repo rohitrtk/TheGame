@@ -1,27 +1,29 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.AI;
 
+/// <summary>
+/// Abstract class for player attacks
+/// </summary>
 public abstract class AbstractPlayer_Attack : NetworkBehaviour
 {
     // Players auto attack range (relative to Unity units)
     protected bool _isAttacking;                        // Is the player attacking at this moment
-    protected float _autoAttackRange;
+    protected float _autoAttackRange;                   // The range for auto attacks
     protected float _autoAttackCooldownTime;            // Mimimum amount of time between auto attacks
 
     /// <summary>
     /// Called to 'cast' an ability
     /// </summary>
     /// <param name="cast"></param>
-    public abstract void Cast(string cast,  NavMeshAgent navMesh);
+    public abstract bool Cast(string cast);
 
     /// <summary>
     /// Called to 'cast' an ability or auto attack that has a target
     /// </summary>
     /// <param name="cast"></param>
     /// <param name="target"></param>
-    public abstract int Cast(string cast, GameObject target, NavMeshAgent navMesh);
+    public abstract bool Cast(string cast, GameObject target);
 
     /// <summary>
     /// Uses players normal attack ability
@@ -58,19 +60,26 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
         return _isAttacking;
     }
 
+    /// <summary>
+    /// Casts a ray to check for target
+    /// </summary>
+    /// <param name="target"></param>
+    /// <returns></returns>
     public virtual IEnumerator DeployMeleeRay(GameObject target)
-    {// FIX ATTACK SCRIPT; IT'S NOT RUNNING?!?!?!?!
+    {
+        // Wait for the animation to look as though it's attacking
         yield return new WaitForSeconds(0.5f * GetComponent<Animator>().speed);
-
+        
         RaycastHit rayInfo;
         Ray direction = new Ray(transform.position, Vector3.forward);
 
-        if(Physics.Raycast(direction, out rayInfo, _autoAttackRange))
+        if(Physics.Raycast(direction, out rayInfo, Mathf.Infinity))
         {
-            Debug.DrawRay(transform.position + new Vector3(0, 2, 0), Vector3.forward, Color.green, 10f);
+            print(rayInfo.collider.gameObject + " | " + target);
+            
             string targetTag = target.tag;
 
-            if (targetTag == "Destructable")
+            if (targetTag == "Destructable" && target == rayInfo.collider.gameObject)
             {
                 Destruct d = target.GetComponent<Destruct>();
                 d.CanDestruct();

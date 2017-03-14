@@ -105,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Prefabs\Goblin_rouge\readme.txt" />
+    <None Include="Assets\Scripts\MyLog.txt" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />

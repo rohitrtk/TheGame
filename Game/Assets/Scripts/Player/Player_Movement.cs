@@ -69,26 +69,21 @@ public sealed class Player_Movement : AbstractPlayer_Movement
         {
             GameObject rayObject = rayInfo.collider.gameObject;
 
-            
+            _navMeshAgent.stoppingDistance = 1f;                        // Reset stopping distance
+            _navMeshAgent.Resume();                                     // Continue with navmesh pathing
 
-            // Check what the player clicked on
+            // Check what the player clicked on...
             if (rayObject.tag == "Interactable")
             {
                 print("Interact");
             }
             else if(rayObject.tag == "Destructable")
             {
-                //RotateToTarget(rayObject.transform);
-
-                if (_playerAttack.Cast("AUTO", rayObject, _navMeshAgent) == -1) return;
-                else if (_playerAttack.Cast("AUTO", rayObject, _navMeshAgent) == 0) 
-
+                if (!_playerAttack.Cast("AUTO", rayObject)) return;     // If the players auto attack wasn't successful, return
                 
-                _navMeshAgent.Stop();
-
-                print("Auto Attack!");
+                _navMeshAgent.Stop();                                   // Stop the navmesh pathing
             }
-            else _navMeshAgent.destination = rayInfo.point;
+            else _navMeshAgent.destination = rayInfo.point;             // Set the destination of the navmesh to this point and move to it
         }
     }
 }

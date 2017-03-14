@@ -3,7 +3,7 @@
 /// <summary>
 /// This class handles the players animations; extends from abstract animation
 /// </summary>
-public class Player_Animation : AbstractPlayer_Animation
+public sealed class Player_Animation : AbstractPlayer_Animation
 {
     /// <summary>
     /// Called when the object is created
@@ -26,8 +26,8 @@ public class Player_Animation : AbstractPlayer_Animation
     {
         if (!isLocalPlayer) return;
 
-        if (_parentMoveScript.GetIsAttacking()) _playerAnimator.SetInteger("moving", Random.Range(3, 5));     // If attacking
-        else if (_parentMoveScript.GetIsMoving()) _playerAnimator.SetInteger("moving", 2);   // If moving
-        else _playerAnimator.SetInteger("moving", 0);                                   // If not moving
+        if (_parentMoveScript.GetIsAttacking()) _playerAnimator.SetInteger("moving", Random.Range(3, 5));   // If attacking
+        else if (_parentMoveScript.GetIsMoving()) _playerAnimator.SetInteger("moving", 2);                  // If moving
+        else _playerAnimator.SetInteger("moving", 0);                                                       // If not moving
     }
 }

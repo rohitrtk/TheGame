@@ -44,19 +44,6 @@ public abstract class AbstractPlayer_Movement : NetworkBehaviour
     protected abstract void Interact();
 
     /// <summary>
-    /// Called to rotate towards a target
-    /// </summary>
-    /// <param name="t"></param>
-    protected virtual void RotateToTarget(Transform t)
-    {
-        _navMeshAgent.destination = t.position;
-        _navMeshAgent.stoppingDistance = Vector3.Distance(transform.position, _navMeshAgent.destination);
-
-        _navMeshAgent.destination = transform.position;
-        _navMeshAgent.stoppingDistance = 1f;
-    }
-
-    /// <summary>
     /// Returns the boolean for if the player is moving
     /// </summary>
     /// <returns></returns>

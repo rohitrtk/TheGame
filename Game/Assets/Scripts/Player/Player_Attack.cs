@@ -1,7 +1,9 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.AI;
 
+/// <summary>
+/// This class handles the players attacks; extends from abstract player attack
+/// </summary>
 public class Player_Attack : AbstractPlayer_Attack
 {
     /// <summary>
@@ -23,7 +25,7 @@ public class Player_Attack : AbstractPlayer_Attack
         // If player is attacking...
         if (_isAttacking)
         {
-            // If the attack cooldown is still going down...
+            // If the attack cooldown is still going on...
             if(_autoAttackCooldownTime <= 0)
             {
                 _autoAttackCooldownTime = 0.5f;
@@ -37,36 +39,36 @@ public class Player_Attack : AbstractPlayer_Attack
     /// Called to 'cast' an ability  
     /// </summary>
     /// <param name="cast"></param>
-    public override void Cast(string cast, NavMeshAgent navMesh)
+    public override bool Cast(string cast)
     {
-        if (!isLocalPlayer) return;
+        if (!isLocalPlayer) return false;
 
         if (cast.Equals("ABILITY1")) Ability1();
         else if (cast.Equals("ABILITY2")) Ability2();
         else if (cast.Equals("ABILITY3")) Ability3();
         else if (cast.Equals("ABILITY4")) Ability4();
+
+        return true;
     }
 
     /// <summary>
     /// Called to 'cast' an ability or auto attack that has a target
+    /// Returns -1 if player isn't local
+    /// Returns 0 if player needs to be closer to it's targets
+    /// Returns 1 if player attacked successfully
     /// </summary>
     /// <param name="cast"></param>
     /// <param name="target"></param>
-    public override int Cast(string cast, GameObject target, NavMeshAgent navMesh)
+    public override bool Cast(string cast, GameObject target)
     {
-        if (!isLocalPlayer) return -1;
+        if (!isLocalPlayer) return false;
 
-        print("Auto attacking 1");
+        var distance = Vector3.Distance(transform.position, target.transform.position);
+        
+        // Auto attack
+        if (cast.Equals("AUTO") && distance < _autoAttackRange) AutoAttack(target);
 
-        var distance = navMesh.remainingDistance;
-
-        if (distance < _autoAttackRange) 
-        if (cast.Equals("AUTO"))
-        {
-            
-        }
-
-        return 0;
+        return true;
     }
 
     /// <summary>
@@ -76,9 +78,7 @@ public class Player_Attack : AbstractPlayer_Attack
     public override void AutoAttack(GameObject target)
     {
         if (!isLocalPlayer || _isAttacking) return;
-
-        print("Auto attacking 2");
-
+        
         _isAttacking = true;
 
         StartCoroutine(DeployMeleeRay(target));
