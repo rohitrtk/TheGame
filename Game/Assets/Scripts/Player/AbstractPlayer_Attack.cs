@@ -69,13 +69,18 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
     {
         // Wait for the animation to look as though it's attacking
         yield return new WaitForSeconds(0.5f * GetComponent<Animator>().speed);
-        
-        RaycastHit rayInfo;
-        Ray direction = new Ray(transform.position, Vector3.forward);
 
-        if(Physics.Raycast(direction, out rayInfo, Mathf.Infinity))
+        Vector3 forward = transform.TransformDirection(Vector3.forward);                    // The forward vector relative to the gameobject as opposed to the world
+        Vector3 rayVector = transform.position + new Vector3(0f, 2f, 0f);                   // The position to fire from relative to the player
+
+        //Debug.DrawRay(transform.position + new Vector3(0, 2f, 0), forward*_autoAttackRange, Color.green, 10);
+
+        Ray direction = new Ray(rayVector, forward);                                        // Direction to fire the ray from
+        RaycastHit rayInfo;                                                                 // Information about the object hit with the ray cast
+
+        if(Physics.Raycast(direction, out rayInfo, _autoAttackRange))
         {
-            print(rayInfo.collider.gameObject + " | " + target);
+            print(rayInfo.collider.gameObject + " | " + target.gameObject);
             
             string targetTag = target.tag;
 

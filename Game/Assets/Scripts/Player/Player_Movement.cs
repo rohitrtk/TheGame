@@ -69,6 +69,7 @@ public sealed class Player_Movement : AbstractPlayer_Movement
         {
             GameObject rayObject = rayInfo.collider.gameObject;
 
+
             _navMeshAgent.stoppingDistance = 1f;                        // Reset stopping distance
             _navMeshAgent.Resume();                                     // Continue with navmesh pathing
 

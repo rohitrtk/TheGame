@@ -13,6 +13,9 @@ public abstract class AbstractPlayer_Movement : NetworkBehaviour
     // Attack Component
     protected Player_Attack _playerAttack;
 
+    // Gameobject to cast ray from
+    protected GameObject _rayObject;
+
     // Nav Mesh Speed
     protected float _playerSpeed;
 
