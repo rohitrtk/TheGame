@@ -82,8 +82,8 @@ public sealed class Player_Movement : AbstractPlayer_Movement
             }
             else
             {
-                _navMeshAgent.destination = rayInfo.point;              // Set the destination of the navmesh to this point and move to it
-                if (_navMeshAgent.remainingDistance <= 1f)              // Prevents the movement animation from playing in the same spot
+                _navMeshAgent.destination = rayInfo.point;                                      // Set the destination of the navmesh to this point and move to it
+                if (Mathf.Abs(_navMeshAgent.remainingDistance) <= _PLAYERSTOPPINGDISTANCE)      // Prevents the movement animation from playing in the same spot
                 {
                     print("Set stopping distance to 0");
                     _navMeshAgent.stoppingDistance = 0f;

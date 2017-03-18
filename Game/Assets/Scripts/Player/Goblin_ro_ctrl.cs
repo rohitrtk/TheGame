@@ -10,7 +10,6 @@ public class Goblin_ro_ctrl : MonoBehaviour {
 	public float runSpeed = 1.7f;
 	public float turnSpeed = 60.0f;
 	public float gravity = 20.0f;
-	private Vector3 moveDirection = Vector3.zero;
 	
 	// Use this for initialization
 	void Start () {

@@ -3,8 +3,10 @@ using UnityEngine;
 
 /// <summary>
 /// Handles the following of a player for a gameobject with a camera
+/// Doesn't require extension of network behaviour; Camera control prefab is instantiated by a player
+/// and target transform is set to that player
 /// </summary>
-public sealed class CameraControl : NetworkBehaviour
+public sealed class CameraControl : MonoBehaviour
 {
     [HideInInspector] public Transform TargetTransform;                         // The target that this object will follow
 
@@ -29,11 +31,11 @@ public sealed class CameraControl : NetworkBehaviour
     {
         if (!TargetTransform) return;                               // If the target transform hasn't been given yet, leave method
 
-        Vector3 myTransform;                                          // Vector position associated with the camera attached to this object
-        myTransform = transform.position;                             // Set myTransform to this gameobjects transform (So it can be edited)
-        myTransform.x = TargetTransform.position.x + 6f;                   // Set myTransform.x to this gameobjects transform.x
-        myTransform.y = TargetTransform.position.y + 15f;             // Set myTransform.y to this gameobjects transform.y but 5 units up
-        myTransform.z = TargetTransform.position.z - 8f;            // Set myTransform.z to this gameobjects transform.z but 5 units back
+        Vector3 myTransform;                                        // Vector position associated with the camera attached to this object
+        myTransform = transform.position;                           // Set myTransform to this gameobjects transform (So it can be edited)
+        myTransform.x = TargetTransform.position.x + 6f;            // Set myTransform.x to this gameobjects transform.x but 6 units up
+        myTransform.y = TargetTransform.position.y + 15f;           // Set myTransform.y to this gameobjects transform.y but 15 units up
+        myTransform.z = TargetTransform.position.z - 8f;            // Set myTransform.z to this gameobjects transform.z but 8 units back
 
         transform.position = myTransform;                           // Set this gameobjects transform to myTransform
 	}
