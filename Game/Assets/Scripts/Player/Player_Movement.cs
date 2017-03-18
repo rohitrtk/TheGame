@@ -48,10 +48,7 @@ public sealed class Player_Movement : AbstractPlayer_Movement
             _navMeshAgent.acceleration =
                 (_navMeshAgent.remainingDistance < _navMeshAgent.stoppingDistance) ? _playerDeceleration : _playerAcceleration;
         }
-        else
-        {
-            _isMoving = false;
-        }
+        else _isMoving = false;
     }
 
     /// <summary>
@@ -69,8 +66,7 @@ public sealed class Player_Movement : AbstractPlayer_Movement
         {
             GameObject rayObject = rayInfo.collider.gameObject;
 
-
-            _navMeshAgent.stoppingDistance = 1f;                        // Reset stopping distance
+            _navMeshAgent.stoppingDistance = _PLAYERSTOPPINGDISTANCE;   // Reset stopping distance
             _navMeshAgent.Resume();                                     // Continue with navmesh pathing
 
             // Check what the player clicked on...
@@ -84,7 +80,15 @@ public sealed class Player_Movement : AbstractPlayer_Movement
                 
                 _navMeshAgent.Stop();                                   // Stop the navmesh pathing
             }
-            else _navMeshAgent.destination = rayInfo.point;             // Set the destination of the navmesh to this point and move to it
+            else
+            {
+                _navMeshAgent.destination = rayInfo.point;              // Set the destination of the navmesh to this point and move to it
+                if (_navMeshAgent.remainingDistance <= 1f)              // Prevents the movement animation from playing in the same spot
+                {
+                    print("Set stopping distance to 0");
+                    _navMeshAgent.stoppingDistance = 0f;
+                }
+            }
         }
     }
 }

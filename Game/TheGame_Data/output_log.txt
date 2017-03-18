@@ -21,7 +21,7 @@ Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Manag
 Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.020 seconds
+- Completed reload, in  0.019 seconds
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on MyNetworkManager
@@ -34,24 +34,204 @@ desktop: 1920x1080 60Hz; virtual: 3600x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.900353 ms
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 132c -> priority: 1 
-  Thread -> id: 3730 -> priority: 1 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.369926 ms
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   21.21.13.7878
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.017 seconds
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
+OnLevelWasLoaded was found on MyNetworkManager
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 382)
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 778.
-Total: 0.938753 ms (FindLiveObjects: 0.028928 ms CreateObjectMapping: 0.024576 ms MarkObjects: 0.260352 ms  DeleteObjects: 0.624384 ms)
+desktop: 1920x1080 60Hz; virtual: 3600x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.822017 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 49ac -> priority: 1 
+  Thread -> id: 4468 -> priority: 1 
+<RI> Initialized touch support.
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.730634 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 963.
+Total: 0.913922 ms (FindLiveObjects: 0.032000 ms CreateObjectMapping: 0.017920 ms MarkObjects: 0.237312 ms  DeleteObjects: 0.626433 ms)
+
+UnloadTime: 0.998914 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 4144 -> priority: 1 
+  Thread -> id: 30f0 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.902155 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 785.
+Total: 0.812289 ms (FindLiveObjects: 0.028672 ms CreateObjectMapping: 0.018176 ms MarkObjects: 0.208128 ms  DeleteObjects: 0.556801 ms)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.434883 ms
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 570.
+Total: 1.195522 ms (FindLiveObjects: 0.014848 ms CreateObjectMapping: 0.026368 ms MarkObjects: 0.251648 ms  DeleteObjects: 0.902402 ms)
+
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
+Set stopping distance to 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 ClientDisconnected due to error: Timeout
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.195777 ms
+UnloadTime: 1.824516 ms
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 567.
-Total: 0.994305 ms (FindLiveObjects: 0.015104 ms CreateObjectMapping: 0.018432 ms MarkObjects: 0.261376 ms  DeleteObjects: 0.699393 ms)
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 570.
+Total: 1.132034 ms (FindLiveObjects: 0.023808 ms CreateObjectMapping: 0.017920 ms MarkObjects: 0.232960 ms  DeleteObjects: 0.857089 ms)
 

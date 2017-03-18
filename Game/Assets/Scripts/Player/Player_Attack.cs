@@ -13,7 +13,7 @@ public class Player_Attack : AbstractPlayer_Attack
     {
         if (!isLocalPlayer) return;
 
-        _autoAttackRange = 3.5f;
+        _autoAttackRange = 5.5f;
         _autoAttackCooldownTime = 0.5f;
     }
 
@@ -22,17 +22,15 @@ public class Player_Attack : AbstractPlayer_Attack
     /// </summary>
     public void Update()
     {
-        // If player is attacking...
-        if (_isAttacking)
+        if (!isLocalPlayer || !_isAttacking) return;
+
+        // If the attack cooldown is still going on...
+        if (_autoAttackCooldownTime <= 0)
         {
-            // If the attack cooldown is still going on...
-            if(_autoAttackCooldownTime <= 0)
-            {
-                _autoAttackCooldownTime = 0.5f;
-                _isAttacking = false;
-            }
-            else _autoAttackCooldownTime -= Time.deltaTime;
+            _autoAttackCooldownTime = 0.5f;
+            _isAttacking = false;
         }
+        else _autoAttackCooldownTime -= Time.deltaTime;
     }
 
     /// <summary>
@@ -53,9 +51,6 @@ public class Player_Attack : AbstractPlayer_Attack
 
     /// <summary>
     /// Called to 'cast' an ability or auto attack that has a target
-    /// Returns -1 if player isn't local
-    /// Returns 0 if player needs to be closer to it's targets
-    /// Returns 1 if player attacked successfully
     /// </summary>
     /// <param name="cast"></param>
     /// <param name="target"></param>
