@@ -16,7 +16,7 @@ public class MyNetworkManager : NetworkManager
         SetPort();
         singleton.StartHost();
 
-        //print("Hosting on: " + singleton.networkAddress);
+        print("Hosting on: " + singleton.networkAddress);
     }
 	
     /// <summary>
