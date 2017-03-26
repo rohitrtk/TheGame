@@ -14,10 +14,9 @@ public class MyNetworkManager : NetworkManager
     public void HostGame()
     {
         SetPort();
-        singleton.networkAddress = "25.131.168.245";
         singleton.StartHost();
-
-        print("Hosting on: " + singleton.networkAddress);
+        
+        print(singleton.networkAddress);
     }
 	
     /// <summary>
