@@ -100,6 +100,7 @@
     <Compile Include="Assets\Scripts\Player\Goblin_ro_ctrl.cs" />
     <Compile Include="Assets\Scripts\Player\Player_Animation.cs" />
     <Compile Include="Assets\Scripts\Player\Player_Attack.cs" />
+    <Compile Include="Assets\Scripts\Player\Player_Control.cs" />
     <Compile Include="Assets\Scripts\Player\Player_Movement.cs" />
     <Compile Include="Assets\Scripts\Player\Player_MovementNetworkSync.cs" />
     <Compile Include="Assets\Scripts\Player\Player_NetworkInit.cs" />

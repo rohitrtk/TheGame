@@ -22,7 +22,7 @@ public sealed class CameraControl : MonoBehaviour
 
         Quaternion cameraRotation = Quaternion.Euler(_CAMERAROTATION);          // Quaternion with a 50 degree rotation on the x axis?
         _camera.transform.rotation = cameraRotation;                            // Set the cameras rotation to the quaternion above
-	}
+    }
 	
     /// <summary>
     /// Called once per frame
