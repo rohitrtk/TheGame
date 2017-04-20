@@ -12,7 +12,7 @@ public sealed class Player_Animation : AbstractPlayer_Animation
     {
         if (!isLocalPlayer) return;
 
-        _parentMoveScript = GetComponent<AbstractPlayer_Movement>();                    // Gets reference to the parent move script
+        _parentMoveScript = GetComponent<Player_Control>();                             // Gets reference to the parent move script
 
         _playerAnimator = GetComponent<Animator>();                                     // Gets the animator component
         _playerAnimator.SetInteger("battle", 1);                                        // Sets the state of the player to "battle"

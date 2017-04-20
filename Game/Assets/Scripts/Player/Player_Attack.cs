@@ -24,6 +24,8 @@ public class Player_Attack : AbstractPlayer_Attack
     {
         if (!isLocalPlayer || !_isAttacking) return;
 
+        // ATTACK STUFF HERE
+
         // If the attack cooldown is still going on...
         if (_autoAttackCooldownTime <= 0)
         {
@@ -58,6 +60,7 @@ public class Player_Attack : AbstractPlayer_Attack
     {
         if (!isLocalPlayer) return false;
 
+        
         var distance = Vector3.Distance(transform.position, target.transform.position);
         
         // Auto attack

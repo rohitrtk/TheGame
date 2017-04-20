@@ -16,7 +16,6 @@ public sealed class Player_Movement : AbstractPlayer_Movement
         if (!isLocalPlayer) return;
         
         _navMeshAgent = GetComponent<NavMeshAgent>();
-        _playerAttack = GetComponent<Player_Attack>();
 
         // Set up relationship between player values and navmesh agent
         _playerSpeed = 10f;                                                     // Set the players speed
@@ -73,12 +72,6 @@ public sealed class Player_Movement : AbstractPlayer_Movement
             if (rayObject.tag == "Interactable")
             {
                 print("Interact");
-            }
-            else if(rayObject.tag == "Destructable")
-            {
-                if (!_playerAttack.Cast("AUTO", rayObject)) return;     // If the players auto attack wasn't successful, return
-                
-                _navMeshAgent.Stop();                                   // Stop the navmesh pathing
             }
             else
             {

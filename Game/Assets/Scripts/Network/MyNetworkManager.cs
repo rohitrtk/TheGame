@@ -58,10 +58,11 @@ public class MyNetworkManager : NetworkManager
     {
         if(level == 0)
         {
+            return; // Temporary return statement till I fix the menu buttons
             StartCoroutine(LoadMenuButtons());
             return;
         }
-
+        
         LoadLevelButtons();
     }
 
