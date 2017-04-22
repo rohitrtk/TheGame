@@ -1,11 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Networking;
 
-public class Destruct : MonoBehaviour
+public class Destruct : NetworkBehaviour
 {
-    public void CanDestruct()
+    [Command]
+    public void CmdCanDestruct()
     {
-        Destroy(gameObject);
+        NetworkServer.Destroy(gameObject);
     }
 }

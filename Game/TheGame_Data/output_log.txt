@@ -19,7 +19,7 @@ Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Manag
 Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.018 seconds
+- Completed reload, in  0.017 seconds
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on MyNetworkManager
@@ -32,87 +32,70 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.794624 ms
+UnloadTime: 0.804608 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1600 -> priority: 1 
-  Thread -> id: 2394 -> priority: 1 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.031680 ms
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 552.
-Total: 0.348160 ms (FindLiveObjects: 0.013056 ms CreateObjectMapping: 0.016640 ms MarkObjects: 0.155648 ms  DeleteObjects: 0.162560 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.276736 ms
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 952.
-Total: 0.938496 ms (FindLiveObjects: 0.036096 ms CreateObjectMapping: 0.027904 ms MarkObjects: 0.288256 ms  DeleteObjects: 0.585984 ms)
-
-Initialize engine version: 5.5.0f3 (38b4efef76f0)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
-    Vendor:   NVIDIA
-    VRAM:     3072 MB
-    Driver:   22.21.13.8165
-Begin MonoManager ReloadAssembly
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.016 seconds
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
-OnLevelWasLoaded was found on MyNetworkManager
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
- 
-(Filename:  Line: 382)
-
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
-<RI> Initializing input.
-<RI> Input initialized.
-Set stopping distance to 0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-<RI> Initialized touch support.
-UnloadTime: 0.868352 ms
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1cb4 -> priority: 1 
-  Thread -> id: 2e4c -> priority: 1 
+  Thread -> id: 1a5c -> priority: 1 
+  Thread -> id: 34c8 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.726976 ms
+UnloadTime: 1.357057 ms
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 778.
-Total: 0.962304 ms (FindLiveObjects: 0.036096 ms CreateObjectMapping: 0.026368 ms MarkObjects: 0.244224 ms  DeleteObjects: 0.655104 ms)
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 952.
+Total: 0.911872 ms (FindLiveObjects: 0.035072 ms CreateObjectMapping: 0.023552 ms MarkObjects: 0.277248 ms  DeleteObjects: 0.575744 ms)
 
-Set stopping distance to 0
+destroy
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Set stopping distance to 0
+destroy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+destroy
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.495361 ms
-UnloadTime: 3.619072 ms
+UnloadTime: 3.294978 ms
 
 Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 566.
-Total: 0.909056 ms (FindLiveObjects: 0.025856 ms CreateObjectMapping: 0.024320 ms MarkObjects: 0.246784 ms  DeleteObjects: 0.611840 ms)
+Total: 1.130752 ms (FindLiveObjects: 0.021248 ms CreateObjectMapping: 0.018432 ms MarkObjects: 0.244736 ms  DeleteObjects: 0.846080 ms)
 
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.306688 ms
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 566.
-Total: 0.904448 ms (FindLiveObjects: 0.022528 ms CreateObjectMapping: 0.019968 ms MarkObjects: 0.233472 ms  DeleteObjects: 0.627968 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 772.
+Total: 0.823296 ms (FindLiveObjects: 0.020992 ms CreateObjectMapping: 0.019200 ms MarkObjects: 0.224000 ms  DeleteObjects: 0.558848 ms)
 
+Trying to send command for object without authority.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+destroy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to send command for object without authority.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+destroy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to send command for object without authority.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+destroy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to send command for object without authority.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+destroy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}

@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.EventSystems;
 
 /// <summary>
 /// Basic player movement class, extends from AbstractPlayer_Movement,
@@ -11,7 +10,7 @@ public sealed class Player_Movement : AbstractPlayer_Movement
     /// <summary>
     /// Called on script init
     /// </summary>
-	protected override void Start ()
+    protected override void Start ()
     {
         if (!isLocalPlayer) return;
         
@@ -25,7 +24,7 @@ public sealed class Player_Movement : AbstractPlayer_Movement
         // Assign values to navmesh    
         _navMeshAgent.speed = _playerSpeed;                                     // Set the navmesh speed to the players speed
         _navMeshAgent.acceleration = _playerAcceleration;                       // Set the navmesh acceleration to the players acceleration
-        _navMeshAgent.stoppingDistance = _PLAYERSTOPPINGDISTANCE;               // Set the navmesh stopping distance to the desired stopping distance
+        _navMeshAgent.stoppingDistance = _playerStoppingDistance;               // Set the navmesh stopping distance to the desired stopping distance
     }
 	
     /// <summary>
@@ -34,10 +33,6 @@ public sealed class Player_Movement : AbstractPlayer_Movement
 	protected override void Update ()
     {
         if (!isLocalPlayer) return;
-        
-        // Right mouse button down
-        if (Input.GetMouseButtonDown(1) &&
-            !EventSystem.current.IsPointerOverGameObject()) Interact();
 
         // If the navmesh has a path; set the navmesh acceleration to the players deceleration value else
         // set the namesh acceleration to the players acceleration value
@@ -51,37 +46,15 @@ public sealed class Player_Movement : AbstractPlayer_Movement
     }
 
     /// <summary>
-    /// Called to interact with the world
+    /// Attempts to move player to the mouse position
     /// </summary>
-    protected override void Interact()
+    /// <param name="rayInfo"></param>
+    public override void Move(RaycastHit rayInfo)
     {
-        if (!isLocalPlayer) return;
-
-        // Create a ray from the current main camera to the mouse position on screen
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit rayInfo;
-
-        if (Physics.Raycast(ray, out rayInfo, Mathf.Infinity))
+        _navMeshAgent.destination = rayInfo.point;                 // Set the destination of the navmesh to this point and move to it
+        if (Mathf.Abs(_navMeshAgent.remainingDistance) <= 1f)      // Prevents the movement animation from playing in the same spot
         {
-            GameObject rayObject = rayInfo.collider.gameObject;
-
-            _navMeshAgent.stoppingDistance = _PLAYERSTOPPINGDISTANCE;   // Reset stopping distance
-            _navMeshAgent.Resume();                                     // Continue with navmesh pathing
-
-            // Check what the player clicked on...
-            if (rayObject.tag == "Interactable")
-            {
-                print("Interact");
-            }
-            else
-            {
-                _navMeshAgent.destination = rayInfo.point;                                      // Set the destination of the navmesh to this point and move to it
-                if (Mathf.Abs(_navMeshAgent.remainingDistance) <= _PLAYERSTOPPINGDISTANCE)      // Prevents the movement animation from playing in the same spot
-                {
-                    print("Set stopping distance to 0");
-                    _navMeshAgent.stoppingDistance = 0f;
-                }
-            }
+            _navMeshAgent.stoppingDistance = 0f;
         }
     }
 }

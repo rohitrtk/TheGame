@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Networking;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// Manages all scripts and methods relevant to the player
@@ -13,6 +15,8 @@ public class Player_Control : NetworkBehaviour
     private AbstractPlayer_Attack _playerAttackScript;              // Player attack script
 
     private Vector3 _cameraRotation;                                // Vector that stores the cameras rotation
+
+    private NavMeshAgent _navMeshAgent;
 
     private float _cameraOffsetY;                                   // How much the camera will be offset on the Y axis
     private float _cameraOffsetZ;                                   // How much the camera will be offset on the Z axis
@@ -32,6 +36,8 @@ public class Player_Control : NetworkBehaviour
 
         _cameraRotation = new Vector3(60f, -45f, 0f);
 
+        _navMeshAgent = GetComponent<NavMeshAgent>();
+
         _cameraOffsetY = 20f;
         _cameraOffsetZ = -10f;
         _cameraOffset = new Vector3(0f, _cameraOffsetY, _cameraOffsetZ);
@@ -47,6 +53,10 @@ public class Player_Control : NetworkBehaviour
     void Update ()
     {
         if (!isLocalPlayer) return;
+
+        // Right mouse button down
+        if (Input.GetMouseButtonDown(1) &&
+            !EventSystem.current.IsPointerOverGameObject()) Interact();
 
         MoveCamera();
     }
@@ -83,6 +93,38 @@ public class Player_Control : NetworkBehaviour
         _mainCameraTransform.rotation = Quaternion.Euler(_cameraRotation);
         _mainCameraTransform.Translate(_cameraOffset);
         _mainCameraTransform.LookAt(transform);
+    }
+
+    public void Interact()
+    {
+        if (!isLocalPlayer) return;
+
+        // Create a ray from the current main camera to the mouse position on screen
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit rayInfo;
+
+        if (Physics.Raycast(ray, out rayInfo, Mathf.Infinity))
+        {
+            GameObject rayObject = rayInfo.collider.gameObject;
+
+            _navMeshAgent.stoppingDistance = 1f;                        // Reset stopping distance
+            _navMeshAgent.Resume();                                     // Continue with navmesh pathing
+
+            // Check what the player clicked on...
+            if (rayObject.tag == "Interactable")
+            {
+                print("Interact");
+            }
+            else if(rayObject.tag == "Destructable")
+            {
+                rayObject.GetComponent<Destruct>().CmdCanDestruct();
+                print("destroy");
+            }
+            else
+            {
+                _playerMovementScript.Move(rayInfo);
+            }
+        }
     }
 
     /// <summary>
