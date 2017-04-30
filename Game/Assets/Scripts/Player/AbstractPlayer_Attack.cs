@@ -86,8 +86,8 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
 
             if (targetTag == "Destructable" && target == rayInfo.collider.gameObject)
             {
-                Destruct d = target.GetComponent<Destruct>();
-                d.CmdCanDestruct();
+                //Destruct d = target.GetComponent<Destruct>();
+                //d.RpcCanDestruct();
             }
         }
     }

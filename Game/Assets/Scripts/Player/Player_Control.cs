@@ -117,7 +117,9 @@ public class Player_Control : NetworkBehaviour
             }
             else if(rayObject.tag == "Destructable")
             {
-                rayObject.GetComponent<Destruct>().CmdCanDestruct();
+                if (!Network.isServer) CmdClientA(rayObject);
+                else RpcServerA(rayObject);
+
                 print("destroy");
             }
             else
@@ -143,5 +145,17 @@ public class Player_Control : NetworkBehaviour
     public bool GetIsAttacking()
     {
         return _playerAttackScript.GetIsAttacking();
+    }
+
+    [ClientRpc]
+    public void RpcServerA(GameObject rayObject)
+    {
+        NetworkServer.Destroy(rayObject);
+    }
+
+    [Command]
+    public void CmdClientA(GameObject rayObject)
+    {
+        RpcServerA(rayObject);
     }
 }

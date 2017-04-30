@@ -3,8 +3,7 @@ using UnityEngine.Networking;
 
 public class Destruct : NetworkBehaviour
 {
-    [Command]
-    public void CmdCanDestruct()
+    public void CanDestruct()
     {
         NetworkServer.Destroy(gameObject);
     }
