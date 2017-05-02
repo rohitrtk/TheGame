@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\Enemy\AbstractEnemy.cs" />
     <Compile Include="Assets\Scripts\Network\MyNetworkManager.cs" />
     <Compile Include="Assets\Scripts\Object\Destruct.cs" />
+    <Compile Include="Assets\Scripts\Object\OutlineHandler.cs" />
     <Compile Include="Assets\Scripts\Player\AbstractPlayer_Animation.cs" />
     <Compile Include="Assets\Scripts\Player\AbstractPlayer_Attack.cs" />
     <Compile Include="Assets\Scripts\Player\AbstractPlayer_Movement.cs" />
@@ -108,6 +109,7 @@
     <None Include="Assets\Fantasy Skybox FREE\Fog and Ambient reference.txt" />
     <None Include="Assets\Fantasy Skybox FREE\Readme.txt" />
     <None Include="Assets\Prefabs\Goblin_rouge\readme.txt" />
+    <None Include="Assets\Shaders\self_illuminated_outlined_diffuse_113.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
