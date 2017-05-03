@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.AI;
 
 /// <summary>
 /// Abstract class for player attacks
@@ -107,21 +106,23 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
                 }
 
                 _isAttacking = true;
-                if (!Network.isServer) CmdClientA(target);
-                else RpcServerA(target);
+                
+                if (!Network.isServer) CmdCall(target);
+                else RpcCall(target);
             }
         }
     }
 
     [ClientRpc]
-    protected void RpcServerA(GameObject rayObject)
+    protected void RpcCall(GameObject target)
     {
-        NetworkServer.Destroy(rayObject);
+        var o = target.GetComponent<ObjectParent>();
+        o.TakeDamage(10);
     }
 
     [Command]
-    protected void CmdClientA(GameObject rayObject)
+    protected void CmdCall(GameObject target)
     {
-        RpcServerA(rayObject);
+        RpcCall(target);
     }
 }

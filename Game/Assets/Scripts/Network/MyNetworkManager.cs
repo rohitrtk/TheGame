@@ -20,7 +20,7 @@ public class MyNetworkManager : NetworkManager
     }
 	
     /// <summary>
-    /// This method will start a client that will communicate with a server
+    /// Will start a client that will communicate with a server
     /// </summary>
     public void JoinGame()
     {

@@ -89,7 +89,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemy\AbstractEnemy.cs" />
     <Compile Include="Assets\Scripts\Network\MyNetworkManager.cs" />
+    <Compile Include="Assets\Scripts\Object\Crate.cs" />
     <Compile Include="Assets\Scripts\Object\Destruct.cs" />
+    <Compile Include="Assets\Scripts\Object\ObjectParent.cs" />
     <Compile Include="Assets\Scripts\Object\OutlineHandler.cs" />
     <Compile Include="Assets\Scripts\Player\AbstractPlayer_Animation.cs" />
     <Compile Include="Assets\Scripts\Player\AbstractPlayer_Attack.cs" />
