@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.AI;
 
 /// <summary>
 /// Abstract class for player attacks
@@ -9,8 +10,21 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
 {
     // Players auto attack range (relative to Unity units)
     protected bool _isAttacking;                        // Is the player attacking at this moment
-    protected float _autoAttackRange;                   // The range for auto attacks
+    private float autoAttackRange;                      // The range for auto attacks
     protected float _autoAttackCooldownTime;            // Mimimum amount of time between auto attacks
+
+    public float AutoAttackRange
+    {
+        get
+        {
+            return autoAttackRange;
+        }
+
+        set
+        {
+            autoAttackRange = value;
+        }
+    }
 
     /// <summary>
     /// Called to 'cast' an ability
@@ -78,7 +92,7 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
         Ray direction = new Ray(rayVector, forward);                                        // Direction to fire the ray from
         RaycastHit rayInfo;                                                                 // Information about the object hit with the ray cast
 
-        if(Physics.Raycast(direction, out rayInfo, _autoAttackRange))
+        if(Physics.Raycast(direction, out rayInfo, AutoAttackRange))
         {
             print(rayInfo.collider.gameObject + " | " + target.gameObject);
             
@@ -86,9 +100,28 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
 
             if (targetTag == "Destructable" && target == rayInfo.collider.gameObject)
             {
-                //Destruct d = target.GetComponent<Destruct>();
-                //d.RpcCanDestruct();
+                var v = GetComponent<Player_Movement>();
+                if (v.GetIsMoving())
+                {
+                    v.SetIsMoving(false);
+                }
+
+                _isAttacking = true;
+                if (!Network.isServer) CmdClientA(target);
+                else RpcServerA(target);
             }
         }
+    }
+
+    [ClientRpc]
+    protected void RpcServerA(GameObject rayObject)
+    {
+        NetworkServer.Destroy(rayObject);
+    }
+
+    [Command]
+    protected void CmdClientA(GameObject rayObject)
+    {
+        RpcServerA(rayObject);
     }
 }

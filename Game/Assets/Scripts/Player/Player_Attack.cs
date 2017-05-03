@@ -13,7 +13,7 @@ public class Player_Attack : AbstractPlayer_Attack
     {
         if (!isLocalPlayer) return;
 
-        _autoAttackRange = 5.5f;
+        AutoAttackRange = 5.5f;
         _autoAttackCooldownTime = 0.5f;
     }
 
@@ -23,8 +23,6 @@ public class Player_Attack : AbstractPlayer_Attack
     public void Update()
     {
         if (!isLocalPlayer || !_isAttacking) return;
-
-        // ATTACK STUFF HERE
 
         // If the attack cooldown is still going on...
         if (_autoAttackCooldownTime <= 0)
@@ -59,12 +57,6 @@ public class Player_Attack : AbstractPlayer_Attack
     public override bool Cast(string cast, GameObject target)
     {
         if (!isLocalPlayer) return false;
-
-        
-        var distance = Vector3.Distance(transform.position, target.transform.position);
-        
-        // Auto attack
-        if (cast.Equals("AUTO") && distance < _autoAttackRange) AutoAttack(target);
 
         return true;
     }

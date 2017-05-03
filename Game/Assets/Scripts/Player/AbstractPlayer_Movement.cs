@@ -42,6 +42,15 @@ public abstract class AbstractPlayer_Movement : NetworkBehaviour
     public abstract void Move(RaycastHit rayInfo);
 
     /// <summary>
+    /// Sets the boolean for movement
+    /// </summary>
+    /// <param name="isMoving"></param>
+    public virtual void SetIsMoving(bool isMoving)
+    {
+        _isMoving = isMoving;
+    }
+
+    /// <summary>
     /// Returns the boolean for if the player is moving
     /// </summary>
     /// <returns></returns>

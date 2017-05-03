@@ -108,24 +108,28 @@ public class Player_Control : NetworkBehaviour
             GameObject rayObject = rayInfo.collider.gameObject;
 
             _navMeshAgent.stoppingDistance = 1f;                        // Reset stopping distance
-            _navMeshAgent.Resume();                                     // Continue with navmesh pathing
+            _navMeshAgent.isStopped = false;                            // Continue with navmesh pathing
 
             // Check what the player clicked on...
             if (rayObject.tag == "Interactable")
             {
                 print("Interact");
+                return;
             }
             else if(rayObject.tag == "Destructable")
             {
-                if (!Network.isServer) CmdClientA(rayObject);
-                else RpcServerA(rayObject);
+                if(Vector3.Distance(gameObject.transform.position, rayObject.transform.position)
+                    <= _playerAttackScript.AutoAttackRange)
+                {
+                    _playerAttackScript.AutoAttack(rayObject);
 
-                print("destroy");
+                    print("destroy");
+                    return;
+                }
             }
-            else
-            {
-                _playerMovementScript.Move(rayInfo);
-            }
+
+            _playerMovementScript.Move(rayInfo);
+            
         }
     }
 
@@ -145,17 +149,5 @@ public class Player_Control : NetworkBehaviour
     public bool GetIsAttacking()
     {
         return _playerAttackScript.GetIsAttacking();
-    }
-
-    [ClientRpc]
-    public void RpcServerA(GameObject rayObject)
-    {
-        NetworkServer.Destroy(rayObject);
-    }
-
-    [Command]
-    public void CmdClientA(GameObject rayObject)
-    {
-        RpcServerA(rayObject);
     }
 }
