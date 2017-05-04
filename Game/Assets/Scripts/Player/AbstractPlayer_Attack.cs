@@ -97,18 +97,21 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
             
             string targetTag = target.tag;
 
-            if (targetTag == "Destructable" && target == rayInfo.collider.gameObject)
+            if(target == rayInfo.collider.gameObject)
             {
-                var v = GetComponent<Player_Movement>();
-                if (v.GetIsMoving())
+                if (targetTag == "Destructable" || targetTag == "Player")
                 {
-                    v.SetIsMoving(false);
-                }
+                    _isAttacking = true;
+                    var v = GetComponent<Player_Movement>();
+                    if (v.GetIsMoving())
+                    {
+                        v.SetIsMoving(false);
+                    }
 
-                _isAttacking = true;
-                
-                if (!Network.isServer) CmdCall(target);
-                else RpcCall(target);
+
+                    if (!Network.isServer) CmdCall(target);
+                    else RpcCall(target);
+                }
             }
         }
     }

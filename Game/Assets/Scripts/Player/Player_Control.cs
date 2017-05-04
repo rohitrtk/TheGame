@@ -13,6 +13,7 @@ public class Player_Control : NetworkBehaviour
 
     private AbstractPlayer_Movement _playerMovementScript;          // Player movement script
     private AbstractPlayer_Attack _playerAttackScript;              // Player attack script
+    private Player_Health _playerHealthScript;                      // Player health script
 
     private Vector3 _cameraRotation;                                // Vector that stores the cameras rotation
 
@@ -33,6 +34,7 @@ public class Player_Control : NetworkBehaviour
 
         _playerMovementScript = GetComponent<AbstractPlayer_Movement>();
         _playerAttackScript = GetComponent<AbstractPlayer_Attack>();
+        _playerHealthScript = GetComponent<Player_Health>();
 
         _cameraRotation = new Vector3(60f, -45f, 0f);
 

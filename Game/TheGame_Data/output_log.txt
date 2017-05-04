@@ -1,23 +1,23 @@
 Initialize engine version: 5.6.0f3 (497a0f351392)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 950M (ID=0x139a)
     Vendor:   NVIDIA
-    VRAM:     3072 MB
+    VRAM:     2019 MB
     Driver:   22.21.13.8165
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.015 seconds
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: E:\Computer Programming\Unity\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.046 seconds
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Unity\Projects\TheGame\Game\TheGame_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on MyNetworkManager
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
@@ -27,3 +27,92 @@ Add a delegate to SceneManager.sceneLoaded instead to get notifications after sc
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+<RI> Initialized touch support.
+The tree pineTree_1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ 
+(Filename:  Line: 140)
+
+UnloadTime: 1.663604 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 2970 -> priority: 1 
+  Thread -> id: 2bd4 -> priority: 1 
+  Thread -> id: 3310 -> priority: 1 
+  Thread -> id: 2330 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+The tree pineTree_1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ 
+(Filename:  Line: 140)
+
+The tree Shrub-1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ 
+(Filename:  Line: 140)
+
+UnloadTime: 7.182614 ms
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2201.
+Total: 2.421332 ms (FindLiveObjects: 0.152098 ms CreateObjectMapping: 0.086518 ms MarkObjects: 0.810666 ms  DeleteObjects: 1.371258 ms)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+destroy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Crate (2) (UnityEngine.GameObject) | Crate (2) (UnityEngine.GameObject)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
