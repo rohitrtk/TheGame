@@ -29,6 +29,15 @@ public class Player_Health : ObjectParent
         Dead = false;
 	}
 
+    public override void Update()
+    {
+        if (Health <= 0)
+        {
+            Dead = true;
+            NetworkServer.Destroy(this.gameObject);
+        }
+    }
+
     public override void TakeDamage(float damageTaken)
     {
         base.TakeDamage(damageTaken);

@@ -118,14 +118,13 @@ public class Player_Control : NetworkBehaviour
                 print("Interact");
                 return;
             }
-            else if(rayObject.tag == "Destructable")
+            else if(rayObject.tag == "Destructable" || rayObject.tag == "Player")
             {
                 if(Vector3.Distance(gameObject.transform.position, rayObject.transform.position)
                     <= _playerAttackScript.AutoAttackRange)
                 {
                     _playerAttackScript.AutoAttack(rayObject);
 
-                    print("destroy");
                     return;
                 }
             }
