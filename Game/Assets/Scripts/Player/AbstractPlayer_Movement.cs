@@ -11,7 +11,7 @@ public abstract class AbstractPlayer_Movement : NetworkBehaviour
     protected NavMeshAgent _navMeshAgent;
 
     // Nav Mesh Speed
-    protected float _playerSpeed;
+    [SerializeField] protected float _playerSpeed;
 
     // Nav Mesh acceleration
     protected float _playerAcceleration;

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.AI;
 
 /// <summary>
 /// Abstract class for player attacks
@@ -99,13 +100,15 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
 
             if(target == rayInfo.collider.gameObject)
             {
-                if (targetTag == "Destructable" || targetTag == "Player")
+                if (targetTag == "Destructable" || targetTag == "Player"
+                    || targetTag == "Enemy")
                 {
                     _isAttacking = true;
-                    var v = GetComponent<Player_Movement>();
-                    if (v.GetIsMoving())
+
+                    var v = GetComponent<NavMeshAgent>();
+                    if (v.hasPath)
                     {
-                        v.SetIsMoving(false);
+                        v.SetDestination(gameObject.transform.position);
                     }
 
 
@@ -120,7 +123,7 @@ public abstract class AbstractPlayer_Attack : NetworkBehaviour
     protected void RpcCall(GameObject target)
     {
         var o = target.GetComponent<ObjectParent>();
-        o.TakeDamage(10);
+        o.TakeDamage(10);   // Temp base damage = 10
     }
 
     [Command]

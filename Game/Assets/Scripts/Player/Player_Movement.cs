@@ -17,7 +17,7 @@ public sealed class Player_Movement : AbstractPlayer_Movement
         _navMeshAgent = GetComponent<NavMeshAgent>();
 
         // Set up relationship between player values and navmesh agent
-        _playerSpeed = 10f;                                                     // Set the players speed
+        //_playerSpeed = 10f;                                                     // Set the players speed
         _playerDeceleration = _playerSpeed++;                                   // Set the players deceleration to the players speed + 1
         _playerAcceleration = _playerDeceleration * 40;                         // Set the players acceleration to the players deceleration * 40
                                                                                 // (Stops the navmesh from giving a "sliding" effect due to high deceleration)
@@ -42,6 +42,7 @@ public sealed class Player_Movement : AbstractPlayer_Movement
             _navMeshAgent.acceleration =
                 (_navMeshAgent.remainingDistance < _navMeshAgent.stoppingDistance) ? _playerDeceleration : _playerAcceleration;
         }
+        else if (_navMeshAgent.pathStatus == NavMeshPathStatus.PathComplete) _isMoving = false;
         else _isMoving = false;
     }
 
